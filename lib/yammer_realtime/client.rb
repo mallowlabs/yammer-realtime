@@ -102,7 +102,7 @@ BODY
         response = https.get(uri.path, header)
         return ::JSON.parse(response.body)
       }
-      return {}
+      {}
     end
 
     def post(url, body)
@@ -116,7 +116,7 @@ BODY
         response = https.post(uri.path, body, header)
         return ::JSON.parse(response.body)
       }
-      return {}
+      {}
     end
   end
 end
